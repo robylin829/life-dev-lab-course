@@ -33,3 +33,8 @@
 ## 備援
 
 課前下載 ZIP 並完成 pnpm install；斷網可操作本機練習與讀 tasks/。沒 AI 帳號時兩人輪流提需求／實作，註明不是實際模型輸出。雲端不可用時用站內模擬與預錄操作證據說明，真實雲端項目保留待驗收。
+
+
+## 初學者安裝與執行支持
+
+課前發 SETUP.md，依 Windows、macOS 或 Ubuntu／WSL 操作。課堂統一用 pnpm dev:local 開前五堂練習，pnpm dev:cloud 開雲端作品；每次核對 package.json 所在目錄、命令結果與實際網址。工具安裝時間另估，受管理的學校電腦由教師先完成準備。

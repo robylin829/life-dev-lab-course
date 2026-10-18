@@ -96,3 +96,18 @@
 ---
 
 [← Task 0](task0.md) · [Task 2 →](task2.md)
+
+
+## 可直接複製的當堂指令
+
+[Windows · PowerShell](../RUNBOOK.md#windows-task1)
+
+
+## 可直接複製的當堂指令
+
+[macOS · Terminal](../RUNBOOK.md#mac-task1)
+
+
+## 可直接複製的當堂指令
+
+[Ubuntu／WSL · bash](../RUNBOOK.md#linux-task1)

@@ -104,3 +104,18 @@
 ---
 
 [← Task 7](task7.md) · [作品證據](../worksheets/evidence.md)
+
+
+## 可直接複製的當堂指令
+
+[Windows · PowerShell](../RUNBOOK.md#windows-task8)
+
+
+## 可直接複製的當堂指令
+
+[macOS · Terminal](../RUNBOOK.md#mac-task8)
+
+
+## 可直接複製的當堂指令
+
+[Ubuntu／WSL · bash](../RUNBOOK.md#linux-task8)

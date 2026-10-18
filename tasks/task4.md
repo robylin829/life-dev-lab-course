@@ -113,3 +113,18 @@ key 對應 JSON 陣列，包含自己的行程與 completed 值。
 ---
 
 [← Task 3](task3.md) · [Task 5 →](task5.md)
+
+
+## 可直接複製的當堂指令
+
+[Windows · PowerShell](../RUNBOOK.md#windows-task4)
+
+
+## 可直接複製的當堂指令
+
+[macOS · Terminal](../RUNBOOK.md#mac-task4)
+
+
+## 可直接複製的當堂指令
+
+[Ubuntu／WSL · bash](../RUNBOOK.md#linux-task4)

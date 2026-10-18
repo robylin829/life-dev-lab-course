@@ -162,3 +162,18 @@ pnpm test
 ---
 
 [← Task 6](task6.md) · [Task 8 →](task8.md)
+
+
+## 可直接複製的當堂指令
+
+[Windows · PowerShell](../RUNBOOK.md#windows-task7)
+
+
+## 可直接複製的當堂指令
+
+[macOS · Terminal](../RUNBOOK.md#mac-task7)
+
+
+## 可直接複製的當堂指令
+
+[Ubuntu／WSL · bash](../RUNBOOK.md#linux-task7)

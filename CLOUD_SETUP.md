@@ -2,7 +2,9 @@
 
 React + TypeScript + Vite + Supabase。網站顯示個人週行事曆，支援註冊／登入／登出、新增、編輯、完成狀態與雲端保存。前端在 Vercel，Auth／Data API／Postgres 在你自己的 Supabase 專案。沒有付費 AI API。
 
-完整教材：https://life-development-lab.vercel.app/#/workshop
+[詳細安裝與複製指令](SETUP.md) · [當堂執行命令](RUNBOOK.md)
+
+完整教材：https://life-development-lab.vercel.app/#/tasks/6
 
 ## 1. 啟動前端
 安裝 Node.js 24、pnpm 11.25.0 與 Git，解壓縮到新的 my-week 資料夾。不要把教材直接覆蓋到其他作品。

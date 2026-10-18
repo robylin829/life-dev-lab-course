@@ -146,3 +146,17 @@ commit 完成後，GitHub 一定已經看得到變更嗎？
 
 [← Task 4](task4.md) · [Task 6 →](task6.md)
 
+
+## 可直接複製的當堂指令
+
+[Windows · PowerShell](../RUNBOOK.md#windows-task5)
+
+
+## 可直接複製的當堂指令
+
+[macOS · Terminal](../RUNBOOK.md#mac-task5)
+
+
+## 可直接複製的當堂指令
+
+[Ubuntu／WSL · bash](../RUNBOOK.md#linux-task5)

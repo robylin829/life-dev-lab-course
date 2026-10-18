@@ -13,95 +13,52 @@
 
 local.html 是 Task 1–5 的本機行事曆；首頁是 Task 6 起的 Supabase 全端作品。兩者分開儲存資料，本機紀錄不會自動搬到雲端。
 
-## 步驟 1：準備工具並檢查版本
+## 步驟 1：確認自己使用的下載路線
 
-安裝 Node.js 24、pnpm、Git 與編輯器。以下命令在 PowerShell、Terminal 或編輯器終端機執行；不是貼到瀏覽器網址列。
+依上方指令選 ZIP 或 Fork + Clone。ZIP 不含 .git 歷史，Task 5 再建立自己的空 repo；Fork + Clone 的 origin 已指向自己的副本。兩條路線都能先完成本機練習。
+
+**預期結果**
+
+能指出目前專案在電腦的哪個資料夾，並知道它來自哪一條路線。
+
+<details>
+<summary>卡住了？查看排錯提示</summary>
+
+檢查 package.json 是否存在；Fork 路線再用 git remote -v 核對自己的帳號。
+
+</details>
+
+## 步驟 2：找到任務、程式與學習單
+
+用編輯器的「開啟資料夾」選取剛才包含 package.json 的專案根目錄。閱讀 SETUP.md、tasks/README.md、src/local.tsx 與 worksheets/evidence.md。RUNBOOK.md 提供每一堂的可複製命令。
+
+**預期結果**
+
+能指出安裝指引、當堂任務、練習程式、測試與成果記錄。
+
+<details>
+<summary>卡住了？查看排錯提示</summary>
+
+若只看到 life-dev-lab-course-main 這個資料夾，代表還在外層，請再進入一層。
+
+</details>
+
+## 步驟 3：知道三個命令各在驗證什麼
+
+pnpm test 檢查正式驗證，初始應 5/5；pnpm task:check 檢查 Task 3 待修練習，初始刻意 3/4；pnpm dev:local 會持續運作並開啟本機頁面。此時先理解這個差別，到 Task 3 再修正。
 
 ```text
-node --version
-pnpm --version
-git --version
+pnpm task:check
 ```
 
 **預期結果**
 
-三個版本號都能顯示。Node.js 為 24.x；教材使用 pnpm 11.25.0。
+看到時間相等的案例失敗，其他三個通過。這個預設失敗不需要重裝套件。
 
 <details>
 <summary>卡住了？查看排錯提示</summary>
 
-指令找不到時依官方安裝頁安裝，再重開終端機。
-
-</details>
-
-## 步驟 2：在 GitHub 建立自己的副本
-
-點本頁「GitHub 教材」。登入後按 Fork，Owner 選自己的帳號，保留名稱 life-dev-lab-course，再 Create fork。這份副本供後續 push、PR 與 Vercel 匯入。
-
-**預期結果**
-
-儲存庫網址的擁有者變成你自己的帳號，檔案中有 package.json、tasks 與 exercises。
-
-<details>
-<summary>卡住了？查看排錯提示</summary>
-
-無法 Fork 時先使用 Download ZIP 路線；Task 5 再補上自己的 repo，不向老師的 main 推送。
-
-</details>
-
-## 步驟 3：下載到桌面並安裝依賴
-
-在自己 fork 的 Code → Local → HTTPS 複製 clone 網址。於桌面開終端機，將 YOUR-USERNAME 換成自己的 GitHub 帳號再執行。未使用 Git 時點本頁「下載 GitHub ZIP」，解壓並進入包含 package.json 的資料夾，再從 pnpm install 開始。
-
-```text
-git clone https://github.com/YOUR-USERNAME/life-dev-lab-course.git
-cd life-dev-lab-course
-pnpm install
-pnpm test
-```
-
-**預期結果**
-
-安裝完成，pnpm test 顯示 5 個正式驗證測試通過。ZIP 路線沒有 .git 歷史；Clone 路線已有 origin。
-
-<details>
-<summary>卡住了？查看排錯提示</summary>
-
-不要同時再建立 Vite 專案。安裝失敗先檢查網路、Node 版本與工作目錄。
-
-</details>
-
-## 步驟 4：啟動本機行事曆
-
-執行 pnpm dev，開終端機顯示的 Local 網址後加上 /local.html，例如 http://localhost:5173/local.html。首頁會顯示雲端設定引導，請先使用本機練習入口。
-
-```text
-pnpm dev
-```
-
-**預期結果**
-
-看到「我的一週 · 本機練習」，可新增虛構行程。這裡刻意保留一個時間判斷缺陷供 Task 3 修正。
-
-<details>
-<summary>卡住了？查看排錯提示</summary>
-
-若 5173 被占用，使用終端機實際顯示的埠號。不要把刻意有缺陷的本機練習當成已完成作品。
-
-</details>
-
-## 步驟 5：找到任務與驗收記錄
-
-在編輯器開啟 tasks/README.md 與 worksheets/evidence.md。整份 GitHub 教材有任務文字；本網站額外提供互動、觀念檢核與進度保存。
-
-**預期結果**
-
-你能指出任務手冊、練習程式、測試與正式雲端程式各在哪裡。
-
-<details>
-<summary>卡住了？查看排錯提示</summary>
-
-初次不用理解所有檔案；先對照 README 的目錄表。
+正式測試與練習測試的檔案不同；對照 README 的命令表，不把其中一項的結果當成另一項。
 
 </details>
 
@@ -136,3 +93,10 @@ pnpm dev
 ---
 
 [回目錄](README.md) · [Task 1 →](task1.md)
+
+
+## 詳細安裝與啟動
+
+[Windows PowerShell](../SETUP.md#windows) · [macOS Terminal](../SETUP.md#mac) · [Ubuntu／WSL](../SETUP.md#linux)
+
+新指令：pnpm dev:local 會自動開本機練習；pnpm dev:cloud 會開雲端作品。下載、解壓、安裝與排錯都在 SETUP.md。

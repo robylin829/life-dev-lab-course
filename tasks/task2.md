@@ -103,3 +103,18 @@ Agent 顯示「已完成」後，下一步應該做什麼？
 ---
 
 [← Task 1](task1.md) · [Task 3 →](task3.md)
+
+
+## 可直接複製的當堂指令
+
+[Windows · PowerShell](../RUNBOOK.md#windows-task2)
+
+
+## 可直接複製的當堂指令
+
+[macOS · Terminal](../RUNBOOK.md#mac-task2)
+
+
+## 可直接複製的當堂指令
+
+[Ubuntu／WSL · bash](../RUNBOOK.md#linux-task2)

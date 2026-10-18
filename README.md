@@ -4,19 +4,29 @@
 
 [開始 Task 0](tasks/task0.md) · [完整任務目錄](tasks/README.md) · [線上互動課程](https://life-development-lab.vercel.app/#/tasks/0) · [直接下載 ZIP](https://github.com/robylin829/life-dev-lab-course/archive/refs/heads/main.zip)
 
-## 取得自己的教材
+## 安裝與執行：選自己的系統
 
-建議先按 Fork 建立自己的副本，再在桌面開啟終端機。把 YOUR-USERNAME 換成自己的 GitHub 帳號。
+[Windows PowerShell 完整指令](SETUP.md#windows) · [macOS Terminal](SETUP.md#mac) · [Ubuntu／WSL](SETUP.md#linux) · [每堂課執行命令](RUNBOOK.md)
+
+SETUP.md 包含工具安裝、ZIP／Fork 下載、自動找到練習資料夾、安裝套件、預期結果、停止與再次啟動、常見錯誤。第一次先照指引進到含 package.json 的專案資料夾，再逐段執行：
 
 ```sh
-git clone https://github.com/YOUR-USERNAME/life-dev-lab-course.git
-cd life-dev-lab-course
-pnpm install
-pnpm test
-pnpm dev
+pnpm install --frozen-lockfile
 ```
 
-需要 Node.js 24、pnpm 11.25.0 與 Git。也可 Code → Download ZIP；解壓後在有 package.json 的目錄從 pnpm install 開始。ZIP 不含 Git 歷史，Task 5 有獨立設定步驟。
+安裝成功後：
+
+```sh
+pnpm test
+```
+
+看到 5/5 通過後，啟動本機練習（持續執行、會自動開頁面）：
+
+```sh
+pnpm dev:local
+```
+
+停止按 Ctrl + C。Task 6 完成 Supabase 設定後改用 pnpm dev:cloud。
 
 ## 兩個可操作入口
 
@@ -39,6 +49,8 @@ pnpm task:check
 
 | 命令 | 範圍 | 初始預期 |
 |---|---|---|
+| pnpm dev:local | Task 1–5 本機練習，開啟 local.html | 顯示本機行事曆 |
+| pnpm dev:cloud | Task 6–8 的雲端作品首頁 | 完成接線後顯示登入 |
 | pnpm test | 正式雲端時間／名稱驗證 | 5/5 通過 |
 | pnpm task:check | 學生本機缺陷練習 | 3/4，修正後 4/4 |
 | pnpm build | TypeScript 與兩個頁面的建置 | 成功 |
