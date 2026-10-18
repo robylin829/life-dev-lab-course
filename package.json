@@ -1,0 +1,26 @@
+{
+  "name": "my-week-fullstack",
+  "version": "1.1.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test tests/validation.test.mjs",
+    "test:cloud": "node --env-file=.env.test.local tests/cloud.mjs",
+    "task:check": "node --test exercises/validate-event.test.mjs"
+  },
+  "dependencies": {
+    "react": "19.3.1",
+    "react-dom": "19.3.1",
+    "@supabase/supabase-js": "2.118.0"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2",
+    "vite": "8.3.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0"
+  }
+}
