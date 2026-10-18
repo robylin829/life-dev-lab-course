@@ -65,7 +65,7 @@ Nothing to commit 表示沒有新變更。作者可用 GitHub noreply email；�
 
 ## 步驟 3：做一個小修改，再開 PR
 
-開分支；在 src/main.tsx 將主標題「我的一週」改為自己的作品名稱。檢查差異並執行測試。push 後到 GitHub 選 Compare & pull request；base 選 main、compare 選此分支。填寫改動目的、驗證方式，邀同學檢視 Files changed。
+開分支；在 src/main.tsx 將主標題「我的一週」改為自己的作品名稱。檢查差異並執行測試。push 後到 GitHub 選 Compare & pull request；base repository 選自己的 Fork（不要選老師的 repo），base 選 main、compare 選此分支。填寫改動目的、驗證方式，邀同學檢視 Files changed。
 
 ```text
 git switch -c feature/project-title
@@ -145,3 +145,4 @@ commit 完成後，GitHub 一定已經看得到變更嗎？
 ---
 
 [← Task 4](task4.md) · [Task 6 →](task6.md)
+
