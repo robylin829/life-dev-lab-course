@@ -177,3 +177,8 @@ pnpm test
 ## 可直接複製的當堂指令
 
 [Ubuntu／WSL · bash](../RUNBOOK.md#linux-task7)
+
+
+## 逐格操作與作業
+
+[開檔、修改、驗收、繳交：Task 7](../HOMEWORK.md#task-7) · [空白作業單](../assignment-templates/task-7.md)

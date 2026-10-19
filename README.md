@@ -90,3 +90,10 @@ GitHub Actions 與 Vercel 建置只執行正式測試；刻意失敗的練習由
 ## 授權與來源
 
 本教材與原創程式採 MIT 授權，見 LICENSE。任務導覽形式參考 [NTHU ScopeLab 實作任務](https://nthu-scopelab.github.io/cr-virtualization/live_migration/live-migration/task1.html)；未複製其內容或圖片。工具文件連結集中於 [官方資源](RESOURCES.md)。
+
+
+## 每堂作業怎麼做
+
+[HOMEWORK.md](HOMEWORK.md) 提供開檔指令、搜尋位置、最小修改片段、預期結果與繳交要求。
+
+例如第三堂：`pnpm handin 3` 建立 `submissions/task-3.md`，填寫修正前後結果後交給老師。已有檔案不覆寫；此命令不會自動驗證、上傳或評分。

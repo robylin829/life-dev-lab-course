@@ -10,7 +10,7 @@ React + TypeScript + Vite + Supabase。網站顯示個人週行事曆，支援�
 安裝 Node.js 24、pnpm 11.25.0 與 Git，解壓縮到新的 my-week 資料夾。不要把教材直接覆蓋到其他作品。
 
 ```powershell
-cd 你的專案路徑
+# 先用 VS Code 開啟含 package.json 的教材資料夾，再開終端機
 pnpm install
 pnpm test
 pnpm dev
@@ -24,7 +24,7 @@ pnpm dev
 3. 表的 GRANT 控制哪些角色能進入；RLS 控制哪些列能讀寫。範本不授予匿名或刪除權限。
 4. 將 .env.example 複製為 .env.local，填 Project URL 和新版 publishable key。
 5. 停止並重新啟動 pnpm dev。不要使用 service_role／secret key。
-6. Authentication 的 Email provider 啟用。URL Configuration：本機 Site URL 與 Redirect URLs 設 http://localhost:5173（如 dev 實際換 port，跟著調整）。
+6. Authentication 的 Email provider 啟用。URL Configuration：本機 Site URL 與 Redirect URLs 設 http://127.0.0.1:5173（如 dev 實際換 port，跟著調整）。
 
 ```dotenv
 VITE_SUPABASE_URL=https://YOUR_PROJECT.supabase.co

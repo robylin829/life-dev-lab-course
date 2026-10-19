@@ -12,7 +12,8 @@
     "test:cloud": "node --env-file=.env.test.local tests/cloud.mjs",
     "task:check": "node --test exercises/validate-event.test.mjs",
     "dev:local": "vite --host 127.0.0.1 --open /local.html",
-    "dev:cloud": "vite --host 127.0.0.1 --open /"
+    "dev:cloud": "vite --host 127.0.0.1 --open /",
+    "handin": "node scripts/handin.mjs"
   },
   "dependencies": {
     "react": "19.3.1",

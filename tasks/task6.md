@@ -179,3 +179,8 @@ pnpm test:cloud
 ## 可直接複製的當堂指令
 
 [Ubuntu／WSL · bash](../RUNBOOK.md#linux-task6)
+
+
+## 逐格操作與作業
+
+[開檔、修改、驗收、繳交：Task 6](../HOMEWORK.md#task-6) · [空白作業單](../assignment-templates/task-6.md)

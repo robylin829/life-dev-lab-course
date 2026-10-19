@@ -118,3 +118,8 @@ Agent 顯示「已完成」後，下一步應該做什麼？
 ## 可直接複製的當堂指令
 
 [Ubuntu／WSL · bash](../RUNBOOK.md#linux-task2)
+
+
+## 逐格操作與作業
+
+[開檔、修改、驗收、繳交：Task 2](../HOMEWORK.md#task-2) · [空白作業單](../assignment-templates/task-2.md)

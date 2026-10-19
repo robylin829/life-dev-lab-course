@@ -160,3 +160,8 @@ commit 完成後，GitHub 一定已經看得到變更嗎？
 ## 可直接複製的當堂指令
 
 [Ubuntu／WSL · bash](../RUNBOOK.md#linux-task5)
+
+
+## 逐格操作與作業
+
+[開檔、修改、驗收、繳交：Task 5](../HOMEWORK.md#task-5) · [空白作業單](../assignment-templates/task-5.md)
